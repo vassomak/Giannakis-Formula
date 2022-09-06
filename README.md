@@ -59,4 +59,4 @@ no, taking into account that the formula is prone to class estimation.
 
 - - - -
 
-**Note**: files cumest.m and cum3est.m are derived from the HOSA Toolbox.
+**Note**: files cumest.m and cum3est.m are derived from the HOSA TOOLBOX.
