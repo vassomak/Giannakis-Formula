@@ -9,7 +9,7 @@ In order to do so, the following steps were conducted:
 * Initially, a real discrete signal *x[k]* is constructed, with *k=1,2, ...,N=2048*, which is derived as the output of a MA-*q* process with coefficients of [1, 0.93, 0.85, 0.72, 0.59, -0.1], driven by non-Gaussian noise *v[k]*, which is derived from an exponential distribution with mean value of 1 (file X.m).
 * The non-Gaussian character of input *v[k]* is justified by calculating its skewness (question 1 - file skew.m).
 * The $3^{rd}$ order cumulants of *x[k]* are estimated and plotted using the indirect method, with K=32, M=64 and L3=20 (question 2 - file cum3.m)
-* The $3^{rd}$ order cumulants were used to estimate the impulse response of the MA system, using the Giannakis' formula, yet considering sub-estimation of the order *q* (*qsub = q-2(), sup-estimation of the order *q* (*q_sup = q+3*) (questions 3,4 - file h_est.m)
+* The $3^{rd}$ order cumulants were used to estimate the impulse response of the MA system, using the Giannakis' formula, yet considering sub-estimation of the order *q* (*qsub = q-2*), sup-estimation of the order *q* (*q_sup = q+3*) (questions 3,4 - file h_est.m)
 * Finally, the MA-*q* system output output is estimated for each impulse response (file x_est.m), along with the Normal Root Mean Square Error (questions 5,6 - file NRMSE_fun.m)
 
 The demonstration of the process takes place in the demo_x.m file
