@@ -57,3 +57,4 @@ calculate the impulse response of a system with only the information of
 $3^{rd}$ order cumulants, either there is white additive Gaussian noise, or
 no, taking into account that the formula is prone to class estimation.
 
+**Note**: file cumest.m and cum3est.m are derived from the HOSA Toolbox.
