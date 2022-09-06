@@ -1,6 +1,6 @@
 function cmat = cum3(x,flag)
-% x to sima
-%flag: gia flag==1 pairnoume kai ta diagrammata twn cumulants
+% x: the signal
+%flag: for flag==1 cumulants' plots are provided
 
 for k=-20:20
     
