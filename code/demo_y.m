@@ -3,7 +3,7 @@ figure;
 k=1:2048;
 for i=1:8
 y = awgn(x, snr(i), 'measured');
-n = y - x; %o thoruvos pou prostethike
+n = y - x; % the added noise
 cmat = cum3(y,2);
 [hest, hsub, hsup] = h_est(cmat);
 if i>=5
