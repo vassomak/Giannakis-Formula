@@ -1,5 +1,5 @@
 function  xest = x_est(x,v,h,flag)
-% gia flag=1 pairnoume to plot tou xestimated kai tou x
+% for flag=1 plots for x_estimated and x are provided
 
 xest = conv(v, h, 'same');
 k= 1:2048;
