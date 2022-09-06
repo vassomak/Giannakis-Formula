@@ -14,7 +14,7 @@ In order to do so, the following steps were conducted:
 
 The demonstration of the process takes place in the demo_x.m file
 
-## Results ##
+### Results ###
 
 In the following 3 images, the original signal x[k] is depicted, along with the estimated, the sub-estimated and the sup-estimated respectively.
 
@@ -30,9 +30,30 @@ h_est  | h_sub  | h_sup
 
 ## Assignment's instructions - second part ##
 
-At the second part of the assignment a source of white Gaussian noise is added at the output of the system, producing a variation in the SNR of [30:-5:-5]dB. Then, the same process is followed as the first part, but instead of x[k], the noise contaminated output is used, for each level of SNR.
+At the second part of the assignment a source of white Gaussian noise is added at the output of the system, producing a variation in the SNR of [30:-5:-5]dB. Then, the same process is followed as the first part, but instead of x[k], the noise contaminated output is used, for each level of SNR (question 7 - demo_y.m file).
 
-## Results ##
-![image](https://user-images.githubusercontent.com/26661405/188721403-736b1be7-7eb5-426c-8428-f47e9230081a.png)
+### Results ###
+In the following pictures the original signal y[k] is depicted along with the estimated y_est[k] for SNR [30:-5:15]dB and [10:-5:-5]dB respectively.
 
-  
+SNR [30:-5:15]dB                          | SNR [10:-5:-5]dB        
+:-------------------------:|:-------------------------:
+![image](https://user-images.githubusercontent.com/26661405/188721403-736b1be7-7eb5-426c-8428-f47e9230081a.png) | ![image](https://user-images.githubusercontent.com/26661405/188721685-2d925970-be3e-4cd1-8f0c-7d57f2f43466.png)
+
+The signal estimation seems to improve for higher SNR levels.
+
+ ## Assignment's instructions - third part ##
+ 
+At the last part, instead of using one realization of the input and output data of the MA-q system, the whole process is repeated 50 times using the mean values. Thus, more valid conclusions can be drawn regarding Giannakis' formula reliability (question 8 - meanValues.m file).
+
+### Results ### 
+
+The following image depicts the boxplots of the mean NRMSE for the real order q, the sub-estimation of the order q-2 and the sup-estimation of the order q+3. Obviously, by sub-estimating the order, the width of the boxplot is much narrower and close to 0, compared to the rest plots.
+ 
+![image](https://user-images.githubusercontent.com/26661405/188726803-22dede37-b552-49ff-9a48-1e32c9ee4d1c.png)
+
+## Conclusion ##
+Summarizing, Giannakis' formula can be applied in practice, making it possible to
+calculate the impulse response of a system with only the information of
+3rd order cumulants, either there is white additive Gaussian noise, or
+no, taking into account that the formula is prone to class estimation.
+
