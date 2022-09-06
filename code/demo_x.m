@@ -1,15 +1,15 @@
 [x,v] = X;
 
-%erwtima 1
+%question 1
 skewness = skew(v)
 
-%erwtima 2 
+%question 2 
 cmat = cum3(x,1); 
 
-%erwtima 3-4
+%questions 3-4
 [hest, hsub, hsup] = h_est(cmat);
 
-%erwtima 5
+%question 5
 figure;
 xest = x_est(x,v,hest,1);
 N1 = NRMSE_fun(xest,x);
@@ -18,7 +18,7 @@ xlabel('k');
 ylabel('Xest');
 legend('original X[k]', 'estimated X[k]');
 
-%erwtima 6
+%question 6
 figure;
 xsub = x_est(x,v,hsub,1);
 N2 = NRMSE_fun(xsub,x);
